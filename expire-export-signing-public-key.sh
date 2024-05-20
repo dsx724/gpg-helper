@@ -9,5 +9,5 @@ mkdir -m 0700 GNUPGHOME
 export GNUPGHOME=$PWD/GNUPGHOME
 gpg --import $1
 gpg --quick-set-expire $2 $3
-gpg --export-options export-minimal --export $2
+gpg --export-options export-minimal --export $2!
 rm -rf $GNUPGHOME
